@@ -1,0 +1,442 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  background-color: #121113;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  /* font-style: italic; */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: white;
+  margin: 0;
+
+}
+h1 strong {
+  color: #026fff;
+}
+h2 {
+  color: #0470fd;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  height: 300px;
+  background-color: #121113;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.hero-image{
+  object-fit: cover;
+}
+
+
+.portfolio {
+  
+  padding: 20px;
+   background: #121113;
+}
+
+/*.project {
+   border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid #ffffff; 
+   color: blue; 
+   border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; 
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+   margin: 10px; 
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}*/
+/* Animación de luz giratoria */
+/* Animación de luz giratoria */
+@keyframes light-spin {
+  0% {
+      box-shadow: 
+          0 0 10px rgba(255, 0, 0, 1), 
+          0 0 20px rgba(255, 0, 0, 0.8), 
+          0 0 30px rgba(255, 0, 0, 0.6);
+  }
+  20% {
+      box-shadow: 
+          0 0 10px rgba(0, 255, 0, 1), 
+          0 0 20px rgba(0, 255, 0, 0.8), 
+          0 0 30px rgba(0, 255, 0, 0.6);
+  }
+  40% {
+      box-shadow: 
+          0 0 10px rgba(255, 165, 0, 1), 
+          0 0 20px rgba(255, 165, 0, 0.8), 
+          0 0 30px rgba(255, 165, 0, 0.6);
+  }
+  60% {
+      box-shadow: 
+          0 0 10px rgba(0, 0, 255, 1), 
+          0 0 20px rgba(0, 0, 255, 0.8), 
+          0 0 30px rgba(0, 0, 255, 0.6);
+  }
+  80% {
+      box-shadow: 
+          0 0 10px rgba(128, 0, 128, 1), 
+          0 0 20px rgba(128, 0, 128, 0.8), 
+          0 0 30px rgba(128, 0, 128, 0.6);
+  }
+  100% {
+      box-shadow: 
+          0 0 10px rgba(255, 0, 0, 1), 
+          0 0 20px rgba(255, 0, 0, 0.8), 
+          0 0 30px rgba(255, 0, 0, 0.6);
+  }
+}
+
+.project {
+  border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid #ffffff; 
+  color: blue; 
+  border-top-color: red;
+  border-top-width: 15px;
+  border-top-style: solid; 
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+  margin: 10px; 
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Añadir la animación */
+  animation: light-spin 1s linear infinite; /* Cambia el tiempo para más o menos giros */
+}
+
+
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+ .project-date {
+  margin: 10px 0;
+} 
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+.project-details {
+  width: 500px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
+
+.header {
+  background-color: #121113;
+  color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+.flexbox {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+
+  flex-shrink: 0;
+}
+
+.footer {
+  color: white;
+  background-color: #480d4f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: #480d4f;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title {
+  margin-left: 20px;
+}
+.event { 
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url('../images/ubuntu.png');
+}
+.social-link.facebook {
+  background-image: url('../images/debian.png');
+}
+.social-link.github {
+  background-image: url('../images/github.png');
+}
+.social-link.instagram {
+  background-image: url('../images/linux.png');
+}
+
+
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 { 
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  background-color: #121113;
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+/* styles.css */
+.center-text {
+  text-align: center; /* Centra el texto dentro del elemento */
+}
+
+/* Estilos para el contenedor que contiene los artículos */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 20px; /* Espacio entre artículos */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para los artículos */
+.event {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Imagen dentro de los artículos */
+.event-image {
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* Títulos y descripciones */
+.event h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.event h2 {
+  color: #026fff;
+}
+
+.event p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Efecto hover en los artículos */
+.event:hover {
+  border: 2px solid #007BFF;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+  margin: 0; /* Mantiene el margen al hover */
+  transform: scale(1.05);
+  background-color: #f9f9f9;
+}
+
+/* Estilos para los enlaces */
+.event-url {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.event-url:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Estilos generales para el contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-list-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #190aee;
+}
